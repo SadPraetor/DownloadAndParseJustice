@@ -9,11 +9,11 @@ namespace DownloadAndParseJustice.Models
 	public class Output
 	{
 		public string Name { get; set; }
-		public uint BusinessID { get; set; }
+		public int BusinessID { get; set; }
 		public string AddressStreet { get; set; }
-		public ushort? AddressStreetNr { get; set; }
+		public int? AddressStreetNr { get; set; }
 		public string AddressHouseNr { get; set; }
-		public ushort? AddressZIP { get; set; }
+		public string AddressZIP { get; set; }
 		public string LegalForm { get; set; }
 	}
 }

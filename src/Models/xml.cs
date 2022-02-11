@@ -42,7 +42,7 @@ namespace DownloadAndParseJustice.Models
 
 		private string nazevField;
 
-		private uint icoField;
+		private int icoField;
 
 		private System.DateTime zapisDatumField;
 
@@ -66,7 +66,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public uint ico
+		public int ico
 		{
 			get
 			{
@@ -489,13 +489,13 @@ namespace DownloadAndParseJustice.Models
 
 		private string cisloTextField;
 
-		private ushort cisloPoField;
+		private int cisloPoField;
 
 		private bool cisloPoFieldSpecified;
 
 		private string cisloOrField;
 
-		private ushort pscField;
+		private string pscField;
 
 		private bool pscFieldSpecified;
 
@@ -582,7 +582,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public ushort cisloPo
+		public int cisloPo
 		{
 			get
 			{
@@ -622,7 +622,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public ushort psc
+		public string psc
 		{
 			get
 			{
@@ -686,7 +686,7 @@ namespace DownloadAndParseJustice.Models
 
 		private string oddilField;
 
-		private ushort vlozkaField;
+		private int vlozkaField;
 
 		/// <remarks/>
 		public xmlSubjektUdajSpisZnSoud soud
@@ -715,7 +715,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public ushort vlozka
+		public int vlozka
 		{
 			get
 			{
@@ -1102,7 +1102,7 @@ namespace DownloadAndParseJustice.Models
 		[System.Xml.Serialization.XmlElementAttribute("jednaVeShodeSOsoby", typeof(object))]
 		[System.Xml.Serialization.XmlElementAttribute("koncovyPrijemceText", typeof(string))]
 		[System.Xml.Serialization.XmlElementAttribute("nahradniSMOsoby", typeof(object))]
-		[System.Xml.Serialization.XmlElementAttribute("pocetClenu", typeof(byte))]
+		[System.Xml.Serialization.XmlElementAttribute("pocetClenu", typeof(int))]
 		[System.Xml.Serialization.XmlElementAttribute("postaveni", typeof(string))]
 		[System.Xml.Serialization.XmlElementAttribute("sestPoziceDozorciOrgan", typeof(bool))]
 		[System.Xml.Serialization.XmlElementAttribute("sestPoziceRevizor", typeof(bool))]
@@ -1878,7 +1878,7 @@ namespace DownloadAndParseJustice.Models
 
 		private string typField;
 
-		private byte textValueField;
+		private int textValueField;
 
 		/// <remarks/>
 		public string typ
@@ -1894,7 +1894,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public byte textValue
+		public int textValue
 		{
 			get
 			{
@@ -2154,7 +2154,7 @@ namespace DownloadAndParseJustice.Models
 
 		private string nazevField;
 
-		private uint icoField;
+		private int icoField;
 
 		private bool icoFieldSpecified;
 
@@ -2197,7 +2197,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public uint ico
+		public int ico
 		{
 			get
 			{
@@ -2318,13 +2318,13 @@ namespace DownloadAndParseJustice.Models
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("adresaText", typeof(string))]
 		[System.Xml.Serialization.XmlElementAttribute("castObce", typeof(string))]
-		[System.Xml.Serialization.XmlElementAttribute("cisloEv", typeof(ushort))]
+		[System.Xml.Serialization.XmlElementAttribute("cisloEv", typeof(int))]
 		[System.Xml.Serialization.XmlElementAttribute("cisloOr", typeof(string))]
 		[System.Xml.Serialization.XmlElementAttribute("cisloPo", typeof(string))]
 		[System.Xml.Serialization.XmlElementAttribute("cisloText", typeof(string))]
 		[System.Xml.Serialization.XmlElementAttribute("obec", typeof(string))]
 		[System.Xml.Serialization.XmlElementAttribute("okres", typeof(string))]
-		[System.Xml.Serialization.XmlElementAttribute("psc", typeof(uint))]
+		[System.Xml.Serialization.XmlElementAttribute("psc", typeof(string))]
 		[System.Xml.Serialization.XmlElementAttribute("statNazev", typeof(string))]
 		[System.Xml.Serialization.XmlElementAttribute("ulice", typeof(string))]
 		[System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
@@ -2411,13 +2411,13 @@ namespace DownloadAndParseJustice.Models
 
 		private string uliceField;
 
-		private ushort cisloPoField;
+		private int cisloPoField;
 
-		private byte cisloOrField;
+		private int cisloOrField;
 
 		private bool cisloOrFieldSpecified;
 
-		private ushort pscField;
+		private string pscField;
 
 		private string okresField;
 
@@ -2474,7 +2474,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public ushort cisloPo
+		public int cisloPo
 		{
 			get
 			{
@@ -2487,7 +2487,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public byte cisloOr
+		public int cisloOr
 		{
 			get
 			{
@@ -2514,7 +2514,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public ushort psc
+		public string psc
 		{
 			get
 			{
@@ -2854,9 +2854,9 @@ namespace DownloadAndParseJustice.Models
 
 		private string uliceField;
 
-		private byte cisloPoField;
+		private int cisloPoField;
 
-		private ushort pscField;
+		private string pscField;
 
 		/// <remarks/>
 		public string statNazev
@@ -2911,7 +2911,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public byte cisloPo
+		public int cisloPo
 		{
 			get
 			{
@@ -2924,7 +2924,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public ushort psc
+		public string psc
 		{
 			get
 			{

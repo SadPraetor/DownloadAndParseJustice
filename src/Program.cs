@@ -9,9 +9,10 @@ var client = new HttpClient();
 
 client.BaseAddress = new Uri("https://dataor.justice.cz/api/");
 
-var name = "nadf-actual-usti_nad_labem-2022.xml.gz";
+//var name = "nadf-actual-usti_nad_labem-2022.xml.gz";
 //var name = "zahrfos-actual-usti_nad_labem-2022.xml.gz";
-var response = await client.GetAsync($"file/{name}");
+var name = "sro-actual-praha-2022.xml.gz";
+var response = await client.GetAsync($"file/{name}",HttpCompletionOption.ResponseHeadersRead);
 response.EnsureSuccessStatusCode();
 
 var dataStream = await response.Content.ReadAsStreamAsync();
