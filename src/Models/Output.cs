@@ -11,7 +11,7 @@ namespace DownloadAndParseJustice.Models
 		public string Name { get; set; }
 		public int BusinessID { get; set; }
 		public string AddressStreet { get; set; }
-		public int? AddressStreetNr { get; set; }
+		public string AddressStreetNr { get; set; }
 		public string AddressHouseNr { get; set; }
 		public string AddressZIP { get; set; }
 		public string LegalForm { get; set; }

@@ -489,7 +489,7 @@ namespace DownloadAndParseJustice.Models
 
 		private string cisloTextField;
 
-		private int cisloPoField;
+		private string cisloPoField;
 
 		private bool cisloPoFieldSpecified;
 
@@ -582,7 +582,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public int cisloPo
+		public string cisloPo
 		{
 			get
 			{
@@ -1148,13 +1148,14 @@ namespace DownloadAndParseJustice.Models
 	[System.SerializableAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+	
 	public partial class xmlSubjektUdajUdajHodnotaUdajeStrukturaVztahu
 	{
 
 		private xmlSubjektUdajUdajHodnotaUdajeStrukturaVztahuLinkedhashmap[] retezceField;
 
 		/// <remarks/>
-		[System.Xml.Serialization.XmlArrayItemAttribute("linked-hash-map", IsNullable = false)]
+		[System.Xml.Serialization.XmlIgnore]
 		public xmlSubjektUdajUdajHodnotaUdajeStrukturaVztahuLinkedhashmap[] retezce
 		{
 			get
@@ -1196,6 +1197,7 @@ namespace DownloadAndParseJustice.Models
 	[System.SerializableAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+
 	public partial class xmlSubjektUdajUdajHodnotaUdajeStrukturaVztahuLinkedhashmapLinkedhashmap
 	{
 
@@ -1219,6 +1221,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
+		[System.Xml.Serialization.XmlIgnore]
 		public xmlSubjektUdajUdajHodnotaUdajeStrukturaVztahuLinkedhashmapLinkedhashmapIdentifikace identifikace
 		{
 			get
@@ -1248,7 +1251,7 @@ namespace DownloadAndParseJustice.Models
 	/// <remarks/>
 	[System.SerializableAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
-	[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+	[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]	
 	public partial class xmlSubjektUdajUdajHodnotaUdajeStrukturaVztahuLinkedhashmapLinkedhashmapIdentifikace
 	{
 
@@ -2154,7 +2157,7 @@ namespace DownloadAndParseJustice.Models
 
 		private string nazevField;
 
-		private int icoField;
+		private string icoField;
 
 		private bool icoFieldSpecified;
 
@@ -2197,7 +2200,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public int ico
+		public string ico
 		{
 			get
 			{
@@ -2411,7 +2414,7 @@ namespace DownloadAndParseJustice.Models
 
 		private string uliceField;
 
-		private int cisloPoField;
+		private string cisloPoField;
 
 		private int cisloOrField;
 
@@ -2474,7 +2477,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public int cisloPo
+		public string cisloPo
 		{
 			get
 			{
@@ -2854,7 +2857,7 @@ namespace DownloadAndParseJustice.Models
 
 		private string uliceField;
 
-		private int cisloPoField;
+		private string cisloPoField;
 
 		private string pscField;
 
@@ -2911,7 +2914,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public int cisloPo
+		public string cisloPo
 		{
 			get
 			{

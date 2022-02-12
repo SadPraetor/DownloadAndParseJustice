@@ -17,6 +17,7 @@ response.EnsureSuccessStatusCode();
 
 var dataStream = await response.Content.ReadAsStreamAsync();
 var decompressor = new GZipStream(dataStream, CompressionMode.Decompress);
+
 //var fileStream = File.Create($@"./../../../Download/{Path.GetFileNameWithoutExtension(name)}");
 //await decompressor.CopyToAsync(fileStream);
 
