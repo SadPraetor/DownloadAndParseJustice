@@ -2321,7 +2321,7 @@ namespace DownloadAndParseJustice.Models
 		/// <remarks/>
 		[System.Xml.Serialization.XmlElementAttribute("adresaText", typeof(string))]
 		[System.Xml.Serialization.XmlElementAttribute("castObce", typeof(string))]
-		[System.Xml.Serialization.XmlElementAttribute("cisloEv", typeof(int))]
+		[System.Xml.Serialization.XmlElementAttribute("cisloEv", typeof(string))]
 		[System.Xml.Serialization.XmlElementAttribute("cisloOr", typeof(string))]
 		[System.Xml.Serialization.XmlElementAttribute("cisloPo", typeof(string))]
 		[System.Xml.Serialization.XmlElementAttribute("cisloText", typeof(string))]
@@ -2416,7 +2416,7 @@ namespace DownloadAndParseJustice.Models
 
 		private string cisloPoField;
 
-		private int cisloOrField;
+		private string cisloOrField;
 
 		private bool cisloOrFieldSpecified;
 
@@ -2490,7 +2490,7 @@ namespace DownloadAndParseJustice.Models
 		}
 
 		/// <remarks/>
-		public int cisloOr
+		public string cisloOr
 		{
 			get
 			{
