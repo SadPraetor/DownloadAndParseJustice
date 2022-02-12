@@ -11,12 +11,12 @@ client.BaseAddress = new Uri("https://dataor.justice.cz/api/");
 
 //var name = "nadf-actual-usti_nad_labem-2022.xml.gz";
 //var name = "zahrfos-actual-usti_nad_labem-2022.xml.gz";
-//var name = "sro-actual-praha-2022.xml.gz";
-//var response = await client.GetAsync($"file/{name}",HttpCompletionOption.ResponseHeadersRead);
-//response.EnsureSuccessStatusCode();
+var name = "sro-actual-praha-2022.xml.gz";
+var response = await client.GetAsync($"file/{name}", HttpCompletionOption.ResponseHeadersRead);
+response.EnsureSuccessStatusCode();
 
-//var dataStream = await response.Content.ReadAsStreamAsync();
-//var decompressor = new GZipStream(dataStream, CompressionMode.Decompress);
+var dataStream = await response.Content.ReadAsStreamAsync();
+var decompressor = new GZipStream(dataStream, CompressionMode.Decompress);
 
 
 //var fileStream = File.Create($@"./../../../Download/{Path.GetFileNameWithoutExtension(name)}");
@@ -25,8 +25,8 @@ client.BaseAddress = new Uri("https://dataor.justice.cz/api/");
 var xmlSerializer = new XmlSerializer(typeof(xml));
 
 
-//var data = (xml)xmlSerializer.Deserialize( decompressor);
-var data = (xml)xmlSerializer.Deserialize(File.OpenRead(@"./../../../Download\new_sro-actual-praha-2022.xml"));
+var data = (xml)xmlSerializer.Deserialize(decompressor);
+//var data = (xml)xmlSerializer.Deserialize(File.OpenRead(@"./../../../Download\new_sro-actual-praha-2022.xml"));
 
 var outputs = data.Subjekt.Select(x => {
 	var adresaUdaj = x.udaje.FirstOrDefault(udaj => udaj.udajTyp.kod == "SIDLO")?.adresa;
